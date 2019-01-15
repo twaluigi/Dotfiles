@@ -120,8 +120,6 @@ alias push='pushd'
 alias tmux='tmux -2'
 alias rm='rm -i'
 
-PATH=$PATH:/home/thomas/.local/bin
-
 if test -t 1 ; then
   ncolors=$(tput colors)
   if test -n "$ncolors" && test $ncolors -ge 8; then
@@ -135,7 +133,5 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}.${osver}@${HOSTNAME%%.*}:${PWD/#
 export PS1="${rl_cyan}${USER}.${osver}${rl_reset}@${rl_yellow}\\h${rl_reset}:${rl_green}\\w${rl_reset}\\$ "
 #export PS1="$(context-color -p)$PS1\[\e[0m\]"
 
-complete -C '/home/thomas/.local/bin/aws_completer' aws
-
 complete -C /usr/local/bin/terraform terraform
-alias config='/usr/bin/git --git-dir=/home/thomas/.cfg/ --work-tree=/home/thomas'
+alias config='/usr/bin/git --git-dir=/home/ec2-user/.cfg/ --work-tree=/home/ec2-user'

@@ -1,10 +1,6 @@
 " Thomas Wygonik vimrc
 " Colors {{{
 syntax enable        " enable syntax processing
-set background=dark
-let g:two_firwatch_italics=1
-color two-firewatch
-set t_Co=256
 " }}}
 
 " Spaces & Tabs {{{
