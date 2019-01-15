@@ -132,6 +132,7 @@ fi
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}.${osver}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
 export PS1="${rl_cyan}${USER}.${osver}${rl_reset}@${rl_yellow}\\h${rl_reset}:${rl_green}\\w${rl_reset}\\$ "
 #export PS1="$(context-color -p)$PS1\[\e[0m\]"
+complete -C '/usr/local/bin/aws_completer' aws
 
 complete -C /usr/local/bin/terraform terraform
 alias config='/usr/bin/git --git-dir=/home/ec2-user/.cfg/ --work-tree=/home/ec2-user'
