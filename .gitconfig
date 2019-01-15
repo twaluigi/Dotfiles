@@ -2,3 +2,5 @@
 	email = thomas.wygonik@gmail.com
 [core]
 	editor = vim
+[push]
+	default = simple
