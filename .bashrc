@@ -136,3 +136,4 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 complete -C /usr/local/bin/terraform terraform
 alias config='/usr/bin/git --git-dir=/home/ec2-user/.cfg/ --work-tree=/home/ec2-user'
+eval `ssh-agent` > /dev/null 2>&1
