@@ -139,3 +139,8 @@ complete -C '/home/thomas/.local/bin/aws_completer' aws
 
 complete -C /usr/local/bin/terraform terraform
 alias config='/usr/bin/git --git-dir=/home/thomas/.cfg/ --work-tree=/home/thomas'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval `ssh-agent` > /dev/null
