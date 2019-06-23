@@ -2,8 +2,8 @@
 " Colors {{{
 syntax enable        " enable syntax processing
 set background=dark
-let g:two_firwatch_italics=1
-color two-firewatch
+let g:solarized_termcolors=256
+colorscheme solarized
 set t_Co=256
 " }}}
 
@@ -104,3 +104,5 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 " }}}
 " vim:foldmethod=marker:foldlevel=0
+
+execute pathogen#infect()
